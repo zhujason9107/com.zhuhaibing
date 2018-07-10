@@ -20,6 +20,9 @@ public class LoginTest extends CaseBase{
 	public DriverBase driver;
 	public WhiteHolePro whiteHolePro;
 	
+	/*
+	 * 备注   备注
+	 * */
 	@BeforeClass
 	@Parameters(value= {"browserType","loginPage"})
 	public void loginTest(String browserType,String url){
