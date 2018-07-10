@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="whitehole"> 
+<!-- 	定义一个测试集，相当于一个独立的模块 -->
+  <test thread-count="5" name="登录页面测试">
+  	<!-- 此测试模块底下包含的测试类 -->
+  	<classes>
+<!--   		类的全路径信息  供框架反射调用 -->
+  		<class name="com.zhuhaibing.baoko.testcase.LoginTest" ></class>
+  	</classes>
+  	
+
+  </test>
+  <parameter name="browserType" value="chrome"></parameter>
+  <parameter name="loginPage" value="https://bd.baoko.cn/login"></parameter>
+<!--   <parameter name="driverPath" value="./src/test/resources/chromedriver.exe"></parameter> -->
+ 
+  
+  <!-- 第二个test -->
+<!--   <test thread-count="5" name="登陆测试"> -->	
+<!--   	<classes> -->
+	<!-- 一个测试类集合里下 需要执行几个测试类 -->
+<!--   		<class name="com.baoko.web.auto.WebAuto1"></class> -->
+<!-- 		<class name="com.baoko.web.auto.WebAuto2"></class> -->
+<!--   	</classes> -->
+<!--   </test>  -->
+</suite> 
